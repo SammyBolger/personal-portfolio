@@ -1,6 +1,6 @@
 # personal-portfolio
 
-*Personal portfolio site at sammybolger.com. Static React SPA, minimalist black-and-blue design, auto-deployed to DreamHost from GitHub.*
+*Personal portfolio site at [sammybolger.com](https://sammybolger.com). Static React SPA, minimalist black-and-blue design, auto-deployed to DreamHost from GitHub.*
 
 [![Deploy](https://img.shields.io/github/actions/workflow/status/SammyBolger/sammybolger-portfolio/deploy.yml?branch=main&label=deploy)](https://github.com/SammyBolger/sammybolger-portfolio/actions/workflows/deploy.yml)
 [![Live](https://img.shields.io/badge/live-sammybolger.com-blue)](https://sammybolger.com)
