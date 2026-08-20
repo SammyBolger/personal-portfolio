@@ -115,7 +115,7 @@ export const projects: Project[] = [
       'Classifies bat species from ultrasonic recordings using MobileNetV2 on spectrograms.',
     bullets: [
       'Processed 33,000+ ultrasonic audio files into spectrograms for bat-call classification.',
-      'Trained a MobileNetV2 model with transfer learning, achieving 94.6% recall on bat calls.',
+      'Trained a MobileNetV2 model with transfer learning, achieving 96.4% recall on bat calls.',
       'Validated with confusion matrix, per-class metrics, and cross-validation.',
       'Deployed an interactive app for real-time inference on uploaded audio.',
     ],
