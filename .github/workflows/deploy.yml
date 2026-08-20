@@ -1,0 +1,37 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Upload dist/ to DreamHost via SFTP
+        env:
+          SFTP_HOST: iad1-shared-b8-38.dreamhost.com
+          SFTP_USER: sammybolger
+          SFTP_PASS: ${{ secrets.DREAMHOST_PASSWORD }}
+          REMOTE_DIR: /home/sammybolger/sammybolger.com/
+        run: |
+          lftp -u "$SFTP_USER,$SFTP_PASS" sftp://$SFTP_HOST -e "
+            set sftp:auto-confirm yes;
+            mirror -R --parallel=4 --verbose dist/ $REMOTE_DIR;
+            bye
+          "

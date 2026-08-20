@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 224" width="224" height="224">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f1f" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+  </defs>
+  <circle cx="112" cy="112" r="112" fill="url(#bg)" />
+  <text
+    x="112"
+    y="140"
+    text-anchor="middle"
+    font-family="Instrument Serif, Georgia, serif"
+    font-size="88"
+    fill="#60a5fa"
+    letter-spacing="-2"
+  >SB</text>
+</svg>
