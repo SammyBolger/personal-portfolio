@@ -7,12 +7,6 @@
 
 The public face of my work: About, Education, Skills, Projects, Career, Contact. Built as a proper multi-page SPA (React Router, not scroll sections) with a system-wide light/dark toggle and a serif-forward typographic style. Auto-deploys to my DreamHost shared host on every push to `main`.
 
-**Live:** [sammybolger.com](https://sammybolger.com)
-
-![Home page](docs/screenshot.png)
-
----
-
 ## Overview
 
 My personal portfolio site. A landing spot for who I am, what I work on, my career so far, my projects, and my resume. Multi-page routing (About, Education, Skills, Projects, Career, Contact) instead of one long scroll. Built to be what a recruiter or collaborator sees first, so it stays minimal, quiet, and easy to scan.
