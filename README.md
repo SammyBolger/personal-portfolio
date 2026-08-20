@@ -1,4 +1,4 @@
-# sammybolger-portfolio
+# personal-portfolio
 
 *Personal portfolio site at sammybolger.com. Static React SPA, minimalist black-and-blue design, auto-deployed to DreamHost from GitHub.*
 
