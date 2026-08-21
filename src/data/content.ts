@@ -123,7 +123,7 @@ export const projects: Project[] = [
     links: [
       {
         label: 'GitHub',
-        href: 'https://github.com/SammyBolger/Bat-Detection-Using-Machine-Learning',
+        href: 'https://github.com/SammyBolger/bat-echolocation-detection',
       },
     ],
   },
